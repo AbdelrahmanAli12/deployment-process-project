@@ -1,14 +1,14 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-// ENV variables 
+// ENV variables
 // - AWS_ACCESS_KEY_ID
 // - AWS_SECRET_ACCESS_KEY
 // Are Also needed
 
 export const config = {
   username: `${process.env.POSTGRES_USERNAME}`,
-  password: `${process.env.POSTGRES_PASSWORD}`,
+  password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
   host: process.env.POSTGRES_HOST,
   aws_region: process.env.AWS_REGION,
@@ -18,6 +18,4 @@ export const config = {
   jwt: {
     secret: process.env.JWT_SECRET,
   },
-  aws_access_key_id: process.env.AWS_ACCESS_KEY_ID,
-  aws_secret_access_key: process.env.AWS_SECRET_ACCESS_KEY,
 };
