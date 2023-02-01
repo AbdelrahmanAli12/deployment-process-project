@@ -1,12 +1,16 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+
+import { config } from "./config";
+
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
   production: false,
   appName: "Udagram",
-  apiHost:
-    "http://udacityelasticbeanstalk-env.eba-bbpuczeg.us-east-1.elasticbeanstalk.com/api/v0",
+  // apiHost: config.api + `/api/v0`,
+  apiHost:`http://localhost:8080/api/v0`,
+  //`database-udacity.cvp8nmbdjzpx.us-east-1.rds.amazonaws.com`+`/api/v0`,
 };
 
 /*

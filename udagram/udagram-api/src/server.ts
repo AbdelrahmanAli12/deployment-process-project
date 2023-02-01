@@ -2,11 +2,11 @@ import * as dotenv from "dotenv";
 import cors from "cors";
 import express from "express";
 import { sequelize } from "./sequelize";
-
 import { IndexRouter } from "./controllers/v0/index.router";
 
 import bodyParser from "body-parser";
 import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
+import { config } from "./config/config";
 
 (async () => {
   dotenv.config();
@@ -25,7 +25,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   console.log("Database Connected");
 
   const app = express();
-  const port = 8080;
+  const port = 8080 || config.host;
 
   app.use(bodyParser.json());
 
