@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  appName: "Udagram",
+  appName: 'Udagram',
   apiHost: `database-udacity.cvp8nmbdjzpx.us-east-1.rds.amazonaws.com/api/v0`,
 };
 
