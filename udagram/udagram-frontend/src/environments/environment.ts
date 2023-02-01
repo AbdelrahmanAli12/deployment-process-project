@@ -8,9 +8,7 @@ import { config } from './config';
 export const environment = {
   production: false,
   appName: 'Udagram',
-  // apiHost: config.api + `/api/v0`,
-  apiHost: `database-udacity.cvp8nmbdjzpx.us-east-1.rds.amazonaws.com/api/v0`,
-  // `database-udacity.cvp8nmbdjzpx.us-east-1.rds.amazonaws.com`+`/api/v0`,
+  apiHost: `http://localhost:8080/api/v0`,
 };
 
 /*

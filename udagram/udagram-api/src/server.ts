@@ -25,7 +25,7 @@ import { config } from "./config/config";
   console.log("Database Connected");
 
   const app = express();
-  const port = 8080 || config.host;
+  const port = process.env.PORT ||8080;
 
   app.use(bodyParser.json());
 
