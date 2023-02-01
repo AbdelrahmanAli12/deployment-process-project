@@ -56,3 +56,29 @@ Unit tests are using the Jasmine Framework.
 ### End to End Tests:
 
 The e2e tests are using Protractor and Jasmine.
+
+### .env file root variables 
+```markdown
+#Database connection
+export POSTGRES_DB=
+export POSTGRES_HOST=
+export POSTGRES_USERNAME=
+export POSTGRES_PASSWORD=
+export PORT=
+export DB_PORT=
+#FrontEnd Connection
+export AWS_BUCKET=
+export S3BUCKET=
+export URL=
+#Aws account information
+export AWS_REGION=
+export AWS_DEFAULT_REGION=
+export AWS_PROFILE=
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+#JWT Authentication
+export JWT_SECRET=
+#Elastic beanstalk
+export EB_APP=
+export EB_ENV=
+```
