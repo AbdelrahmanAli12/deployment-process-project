@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 import cors from "cors";
 import express from "express";
 import { sequelize } from "./sequelize";
+
 import { IndexRouter } from "./controllers/v0/index.router";
 
 import bodyParser from "body-parser";
