@@ -6,7 +6,7 @@
     "node": "14.15.0"
   },
   "main": "server.ts",
- "scripts": {
+  "scripts": {
     "start": "node ./www/server.js",
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
