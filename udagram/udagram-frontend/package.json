@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "unset NODE_OPTIONS && ng build",
+    "build": "echo set NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "deploy": "chmod +x ./bin/deploy.sh && bash ./bin/deploy.sh",
     "test": "ng test --watch=false",
     "lint": "ng lint --fix",
