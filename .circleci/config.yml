@@ -6,13 +6,20 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
   # different jobs are calles later in the workflows sections
 workflows:
-  main:
+  udagram:
     jobs:
-      - build:
+      - build
+      - hold:
           filters:
-              branches:
-                only:
-                  - master
+            branches:
+              only:
+                - master
+          type: approval
+          requires:
+            - build
+      - deploy:
+          requires:
+            - hold
 jobs:
   build:
     docker:
@@ -55,6 +62,7 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+  deploy:          
       # deploy the backend API      
       - run:
           name: API deploy
