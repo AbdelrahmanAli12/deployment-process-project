@@ -62,7 +62,16 @@ jobs:
           name: API Build
           command: |
             npm run api:build
-  deploy:          
+  deploy:
+    docker:
+      - image: "cimg/base:stable"
+      # more setup needed for aws, node, elastic beanstalk
+    steps:
+      - node/install:
+          node-version: '14.15' 
+      - eb/setup
+      - aws-cli/setup
+      - checkout          
       # deploy the backend API      
       - run:
           name: API deploy
