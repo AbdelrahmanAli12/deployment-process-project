@@ -15,7 +15,7 @@ In this project is about hosting a developed Full-Stack application built for a 
 ## Screenshot
 website link:http://abdelrahman-udagram-deploy.s3-website-us-east-1.amazonaws.com
 
-![app](screenshots/app.PNG)
+![app](/screenshots/app.PNG)
 
 ## Dependencies
 
