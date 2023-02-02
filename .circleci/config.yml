@@ -47,7 +47,7 @@ jobs:
             npm run frontend:build
       # deploy the frontend app      
       - run:
-          name: API deploy
+          name: Frontend deploy
           command: |
             npm run frontend:deploy      
       # Install dependencies in the the backend API
